@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;_04Collections._05CountSpecifiedWord&apos; to &apos;_06CountSpecifiedWord&apos;&#x0A;- Original project: &apos;Homeworks-May&apos;&#x0A;- Original element: &apos;_04Collections._05CountSpecifiedWord&apos;&#x0A;- Renamed element: &apos;_04Collections._06CountSpecifiedWord&apos;&#x0A;- Update references to refactored element&#x0A;- Update fully qualified names in &apos;*&apos; files&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;_05CountSpecifiedWord&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;_04Collections{_05CountSpecifiedWord.java[_05CountSpecifiedWord" matchStrategy="1" name="_06CountSpecifiedWord" patterns="*" qualified="true" references="true" similarDeclarations="false" stamp="1420549639680" textual="true" version="1.0"/>
+</session>

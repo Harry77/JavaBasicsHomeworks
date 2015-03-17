@@ -1,0 +1,72 @@
+package _01IntroductionToJava;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import com.itextpdf.text.BaseColor;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.Font;
+import com.itextpdf.text.FontFactory;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.Rectangle;
+import com.itextpdf.text.pdf.BaseFont;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
+
+public class _09GeneratePDFByExternalLibrary {
+
+	public static void main(String[] args) throws IOException, DocumentException {
+		Document PDFdocument = new Document();
+		String[] cards = new String[] { "2", "3", "4", "5", "6", "7", "8", "9",
+				"10", "J", "Q", "K", "A" };
+		String[] suits = new String[] { "\u2660", "\u2665", "\u2666", "\u2663" };
+		String currentCard;
+
+		PdfWriter.getInstance(PDFdocument, new FileOutputStream(
+				"cards.pdf"));
+		
+		//BaseFont unicode = BaseFont.createFont("c:\\windows\\fonts\\cour.ttf", BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+
+        Font font;
+
+		PDFdocument.open();
+
+		PdfPTable table = new PdfPTable(7);
+		float[] columnWidths = { 5f, 1f, 5f, 1f, 5f, 1f, 5f };
+		table.setWidths(columnWidths);
+
+		for (Integer i = 0; i < 13; i++) {
+			for (Integer j = 0; j < 4; j++) {
+				currentCard = cards[i] + suits[j];
+				if (j == 0 || j == 3) {
+					font = FontFactory.getFont("Helvetica", 16, BaseColor.BLACK);
+				} else {
+					font = FontFactory.getFont("Courier-Bold", 16, BaseColor.RED);
+				}
+				PdfPCell cell = new PdfPCell(new Paragraph(currentCard, font));
+				cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+				cell.setVerticalAlignment(Element.ALIGN_MIDDLE);
+				cell.setPaddingTop(55);
+				cell.setPaddingBottom(55);
+				table.addCell(cell);
+				if (j < 3) {
+					PdfPCell emptyCell = new PdfPCell();
+					emptyCell.setBorder(Rectangle.NO_BORDER);
+					table.addCell(emptyCell);
+				}
+			}
+			PdfPCell cell = new PdfPCell();
+			cell.setColspan(7);
+			cell.setBorder(Rectangle.NO_BORDER);
+	        cell.setFixedHeight(20f);
+			table.addCell(cell);
+		}
+		PDFdocument.add(table);
+
+		PDFdocument.close();
+	}
+
+}

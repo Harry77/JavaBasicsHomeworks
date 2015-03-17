@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;_01IntroductionToJava._08SortArrayOStrings&apos; to &apos;_08SortArrayOfStrings&apos;&#x0A;- Original project: &apos;Intro-Java-Homework&apos;&#x0A;- Original element: &apos;_01IntroductionToJava._08SortArrayOStrings&apos;&#x0A;- Renamed element: &apos;_01IntroductionToJava._08SortArrayOfStrings&apos;&#x0A;- Update references to refactored element&#x0A;- Update fully qualified names in &apos;*&apos; files&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;_08SortArrayOStrings&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;_01IntroductionToJava{_08SortArrayOStrings.java[_08SortArrayOStrings" matchStrategy="1" name="_08SortArrayOfStrings" patterns="*" qualified="true" references="true" similarDeclarations="false" stamp="1421692777513" textual="true" version="1.0"/>
+</session>

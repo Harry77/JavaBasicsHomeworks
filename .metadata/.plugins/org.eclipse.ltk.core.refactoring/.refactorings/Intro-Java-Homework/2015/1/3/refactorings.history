@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;_01IntroductionToJava._08ArrayOStrings.java&apos; to &apos;_08SortArrayOStrings.java&apos;&#x0A;- Original project: &apos;Intro-Java-Homework&apos;&#x0A;- Original element: &apos;_01IntroductionToJava._08ArrayOStrings.java&apos;&#x0A;- Renamed element: &apos;_01IntroductionToJava._08SortArrayOStrings.java&apos;" description="Rename compilation unit &apos;_08ArrayOStrings.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;_01IntroductionToJava{_08ArrayOStrings.java" name="_08SortArrayOStrings.java" references="false" stamp="1421316660950" version="1.0"/>
+</session>

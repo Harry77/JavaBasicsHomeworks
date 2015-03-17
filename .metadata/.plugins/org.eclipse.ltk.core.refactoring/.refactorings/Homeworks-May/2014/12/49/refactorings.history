@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;_02JavaSyntax._007CountOfBitsOne&apos; to &apos;_07CountOfBitsOne&apos;&#x0A;- Original project: &apos;Homeworks-May&apos;&#x0A;- Original element: &apos;_02JavaSyntax._007CountOfBitsOne&apos;&#x0A;- Renamed element: &apos;_02JavaSyntax._07CountOfBitsOne&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;_007CountOfBitsOne&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;_02JavaSyntax{_007CountOfBitsOne.java[_007CountOfBitsOne" matchStrategy="1" name="_07CountOfBitsOne" qualified="false" references="true" similarDeclarations="false" stamp="1417881848294" textual="false" version="1.0"/>
+</session>

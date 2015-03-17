@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Intro-Java-Homeworks&apos; to &apos;Intro-Java-Homework&apos;&#x0A;- Original project: &apos;CSharp-Homeworks&apos;&#x0A;- Destination element: &apos;Intro-Java-Homework&apos;&#x0A;- Original element: &apos;Intro-Java-Homeworks&apos;&#x0A;- Update references to refactored element" description="Move folder" destination="=Intro-Java-Homework" element1="Intro-Java-Homeworks" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1422202947652" units="0" version="1.0"/>
+</session>
